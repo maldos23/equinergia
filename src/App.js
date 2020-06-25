@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
 import Index from "./pages/index";
 import Services from "./pages/services";
 import About from "./pages/about";
@@ -14,6 +14,7 @@ class App extends Component {
           <Route path="/" exact component={Index} />
           <Route path="/servicios" exact component={Services} />
           <Route path="/about" exact component={About}/>
+          <Redirect from="*" to="/" />
         </Switch>
       </BrowserRouter>
     );
