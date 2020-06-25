@@ -4,7 +4,6 @@ import "./index.css";
 import 'animate.css';
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "typeface-roboto";
 import "typeface-montserrat";
 import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core";
 import "react-app-polyfill/ie9";
